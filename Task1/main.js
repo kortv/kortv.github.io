@@ -11,7 +11,7 @@ $('table#example thead').append("<tr>" + tHeat + "</tr>");
 
 var table = $('#example').DataTable({
     "order": [
-        [6, 'desc']
+        [6, 'asc']
     ],
     "ajax": 'JsonData.json',
 
