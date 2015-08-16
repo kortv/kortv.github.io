@@ -1,0 +1,39 @@
+/* Space out content a bit */
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+/* Customize container */
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 900px;
+    }
+}
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+}
+.controls {
+    padding: 30px 0 15px;
+    text-align: center;
+}
+.controls .btn {
+    margin-bottom: 15px;
+}
+#waveform {
+    position: relative;
+}
+#drop {
+    text-align: center;
+    border: 3px dashed #ddd;
+    padding: 30px;
+}
+#drop.wavesurfer-dragover {
+    border-color: #333;
+}
