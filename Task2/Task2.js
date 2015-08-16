@@ -41,26 +41,26 @@ function getData(url, callback) {
     }, Math.round(Math.random * 1000));
 }
 
-/*
+/**
  * Ваши изменения ниже
  */
+
 var requests = ['/countries', '/cities', '/populations'];
 var responses = {};
-/*
-Заменил цилк for на forEach чтобы каждый callback
-использовал свой элемент из requests
-а не i один для всех в конце цикла
-*/
-requests.forEach ( function ( request ){
 
-    var callback = function (error, result) {
+
+requests.forEach(function(request) {
+
+    var callback = function(error, result) {
         responses[request] = result;
         var l = [];
         for (K in responses)
             l.push(K);
 
         if (l.length == 3) {
-            var c = [], cc = [], p = 0;
+            var c = [],
+                cc = [],
+                p = 0;
             for (i = 0; i < responses['/countries'].length; i++) {
                 if (responses['/countries'][i].continent === 'Africa') {
                     c.push(responses['/countries'][i].name);
@@ -84,8 +84,34 @@ requests.forEach ( function ( request ){
             }
 
             console.log('Total population in African cities: ' + p);
+
         }
     };
 
     getData(request, callback);
 })
+
+function cleaner (val) {
+    return val!=undefined
+}
+
+setTimeout(function() { // for async prompt
+    
+    var collectedCount = 0;
+    var question = prompt("Please enter country name");
+
+    var citiesInCountry = responses['/cities'].map(function(arg) {
+        if (arg.country === question) return arg.name
+    }).filter(cleaner);
+    if (citiesInCountry.length) {
+        citiesInCountry.forEach(function(city) {
+            responses['/populations'].forEach(function(obj) {
+                if (obj.name === city) collectedCount += obj.count
+            })
+        })
+        console.log('Total population in ' + question + ' : ' + collectedCount)
+    } else console.log('Sorry, we do not have information about ' + question)
+}, 1)
+
+
+
