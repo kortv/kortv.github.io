@@ -297,11 +297,13 @@ height: 100%;
     transform: scale(0);
     -webkit-transform: scale(0);
 }
-.back {
-    position: absolute !important;
-    z-index: 999;
+#back {
+    position: absolute;
+    color: white;
+    z-index: 99;
     text-decoration: none;
     left: 97%;
+    
 }
 
 .wdgt {
