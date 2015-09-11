@@ -182,7 +182,7 @@
     height: 400px;
     left: 810px;
     top: 430px;
-    border: solid rgba(255, 255, 255, 0.05) 0px;
+    border: solid rgba(255, 255, 255, 0.2) 0px;
     border-radius: 50%;
     z-index: 9;
 }
