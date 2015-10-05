@@ -1,4 +1,4 @@
 # kortv.github.io
-Folder v5 - Test web app interactive books
+Folder 5 - Web application interactive books
 </br>
-Folders Task 1-3 - Yandex tasks
+Online example: http://kortv.github.io/5/index.html
