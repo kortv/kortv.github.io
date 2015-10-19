@@ -1,0 +1,17 @@
+.name {
+  border: 1px solid red;
+  padding: 0 14px;
+}
+
+.authorName {
+  color: red;
+}
+
+.pic {
+  border: 1px solid red;
+  padding: 0 14px;
+}
+
+.logoMbs{
+	width: 300px;
+}
