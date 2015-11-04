@@ -24,7 +24,6 @@ module.exports = {
 
   // Provide the Local Scope plugin to postcss-loader:
   postcss: [ require('postcss-local-scope')],
-  
 
   plugins: [
     new ExtractTextPlugin('style.css', { allChunks: true })

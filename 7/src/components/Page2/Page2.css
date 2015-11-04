@@ -2,20 +2,39 @@
   --mainColor: green;
 }
 
-.name {
-  border: 1px solid red;
-  padding: 0 14px;
+.logoMbs {
+	margin-bottom: 220px;
+    width: 438px;
+    height: 133px;
+    background: url(/img/Logo_MBS.png);
+    background: url(/img/Logo_MBS.svg);
+    background-size: contain;
 }
 
-.authorName {
-  color: red;
+.mainText {
+  font-size: 20px;
+  font-family: "Times New Roman";
+  color: rgb(71, 71, 71);
+  line-height: 1.2;
+  text-align: left;
+  width: 588px;
 }
 
-.pic {
-  border: 1px solid var(--mainColor);
-  padding: 0 14px;
+.mainPic {
+  background: url(/img/p02/picp2.png);
+  background-size: contain;
+  position: absolute;
+  left: 740px;
+  top: 45px;
+  width: 455px;
+  height: 630px;
+  border: 4px solid white;
+  box-shadow: 0px 0px 0px 2px #888888;
 }
 
-.logoMbs{
-	width: 300px;
+.container{
+	margin-left: 60px;
+	margin-top: 70px;
 }
+
+
