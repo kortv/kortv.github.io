@@ -1,8 +1,12 @@
 :root {
-  --mainColor: #474747;
+  --mainColor: red;
 }
 
-.titleName {
+a {
+  color: var(--mainColor);
+}
+
+.Page1__titleName___QPvP0 {
     font-size: 32px;
     font-family: "Times New Roman";
     color: var(--mainColor);
@@ -12,7 +16,7 @@
     line-height: 1.1;
 }
 
-.authorName {
+.Page1__authorName___39JbX {
     font-size: 32px;
     font-family: "Times New Roman";
     color: #006c8e;
@@ -21,21 +25,20 @@
     z-index: 4;
 }
 
-.pic {
+.Page1__pic___3Zz8G {
+    position: relative;
     width: 456px;
     height: 409px;
     z-index: 5;
 }
 
-.logoMbs {
+.Page1__logoMbs___32zZ6 {
+    position: relative;
     width: 235px;
     height: 72px;
-    
-    background: url(/img/Logo_MBS.png);
-    background-size: contain;
     z-index: 2;
 }
-.flexbox{
+.Page1__flexbox___BoJAw{
 	position: absolute;
 	margin-left: 300px;
 	margin-top: 20px;
@@ -46,3 +49,22 @@
     -webkit-flex-flow: wrap column;
     flex-flow: wrap column;
 }
+.Page2__name___3Xdei {
+  border: 1px solid red;
+  padding: 0 14px;
+}
+
+.Page2__authorName___a-Aud {
+  color: red;
+}
+
+.Page2__pic___1jUGz {
+  border: 1px solid red;
+  padding: 0 14px;
+}
+
+.Page2__logoMbs___iT-AM{
+	width: 300px;
+}
+
+/*# sourceMappingURL=style.css.map*/
