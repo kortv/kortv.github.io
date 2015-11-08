@@ -1,0 +1,27 @@
+@import "./../scss/constants";
+
+.images .image {
+  position: absolute;
+  width : 411px;
+  height : 592px;
+  opacity: 0;
+}
+  .images {
+  margin: 50px;
+  position: relative;
+  width : 411px;
+  height : 592px;
+  overflow: hidden;
+}
+.flexbox{
+  display: flex;
+  flex-direction: row;
+  flex-flow: row;
+}
+.flexbox div {
+  flex: 1 49%;
+}
+.flexbox hr {
+  width: 1px;
+  transform: rotation(90grad)
+}

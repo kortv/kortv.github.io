@@ -1,0 +1,34 @@
+@import "./../scss/constants";
+
+.logoMbs {
+    @extend ._logoMbs;
+    width: 235px;
+    height: 72px;
+    margin-bottom: 40px;
+}
+.titleName {
+    color: $primary-color;
+    text-align: left;
+    position: relative;
+    line-height: 1.1;
+}
+
+.authorName {
+    color: #006c8e;
+    text-align: left;
+    position: relative;
+}
+
+.pic {
+    @extend ._img;
+    width: 456px;
+    height: 409px;
+    background-image: url(./../../../img/p1/pic.png);
+    margin-top: 30px;
+}
+
+.container{
+	position: absolute;
+	margin-left: 410px;
+	margin-top: 25px;
+}

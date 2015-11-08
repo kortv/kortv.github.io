@@ -1,0 +1,15 @@
+.images .image {
+  position: absolute;
+  @extend ._img;
+  width : 411px;
+  height : 592px;
+  opacity: 0;
+  text-align: start;
+}
+  .images {
+  margin: 50px;
+  position: relative;
+  width : 411px;
+  height : 592px;
+  overflow: hidden;
+}

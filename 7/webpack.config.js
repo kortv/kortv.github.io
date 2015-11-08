@@ -2,6 +2,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var path = require('path');
 var postcss = require('postcss');
+var CompressionPlugin = require("compression-webpack-plugin");
   
 
 module.exports = {
@@ -15,9 +16,11 @@ module.exports = {
 
   module: {
     loaders: [
-
+      { test: /\.png$/, loader: "url-loader?limit=100000" },
+      { test: /\.jpg$/, loader: "file-loader" },
+      { test: /\.svg$/, loader: "url-loader?limit=100000" },
       { test: /\.js[x]?$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react' },
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader")},
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?module!autoprefixer-loader!sass-loader")},
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?module!cssnext-loader")}
     ]
   },
@@ -26,7 +29,14 @@ module.exports = {
   postcss: [ require('postcss-local-scope')],
 
   plugins: [
-    new ExtractTextPlugin('style.css', { allChunks: true })
+    new ExtractTextPlugin('style.css', { allChunks: true }),
+    new CompressionPlugin({
+      asset: "{file}.gz",
+      algorithm: "gzip",
+      regExp: /\.js$|\.html$|\.css$/,
+      threshold: 10240,
+      minRatio: 0.8
+    })
   ]
 };
 /*

@@ -1,8 +1,8 @@
 "use srtict";
 
-var components = {};
+/*var components = {};
 var cleanAllInterval = function() {
-    for (var i = 1; i < 9999; i++) {clearInterval(i)}
+    for (let i = 1; i < 9999; i++) {clearInterval(i)}
 }
 
 Reveal.addEventListener('slidechanged', function(event) {
@@ -14,7 +14,8 @@ Reveal.addEventListener('slidechanged', function(event) {
     if (event.currentSlide.attributes["data-state"]) {
 
         var state = event.currentSlide.attributes["data-state"].nodeValue;
-        React.render(components[state.toString()], event.currentSlide.children[0]);
+        ReactDOM.render(components[state.toString()], event.currentSlide.children[0]);
         components[state + "Fn"]()
     }
-})
+})*/
+
