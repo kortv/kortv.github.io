@@ -21,6 +21,6 @@
     "style-loader": "*",
     "url-loader": "*",
     "webpack": "*",
-    "webpack-dev-server": "*"
+    "webpack-dev-server": "^1.12.1"
   }
 }

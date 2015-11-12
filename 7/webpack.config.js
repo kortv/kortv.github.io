@@ -20,7 +20,7 @@ module.exports = {
       { test: /\.svg$/, loader: "url-loader?limit=100000" },
       { test: /\.js[x]?$/, exclude: /node_modules/, loader: 'babel-loader',
         query: {
-            presets: ['es2015', 'react']
+            presets: ['es2015', 'react', 'stage-0']
           }
         },
 
@@ -31,14 +31,16 @@ module.exports = {
 
   plugins: [
     new ExtractTextPlugin('style.css', { allChunks: true }),
-    new CompressionPlugin({
+/*    new CompressionPlugin({
       asset: "{file}.gz",
       algorithm: "gzip",
       regExp: /\.js$|\.html$|\.css$/,
       threshold: 10240,
       minRatio: 0.8
     })
-  ]
+*/  ],
+  watch: true,
+  devtool: "source-map"
 };
 /*
 var ExtractTextPlugin = require('extract-text-webpack-plugin');

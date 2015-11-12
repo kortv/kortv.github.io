@@ -18,7 +18,7 @@ export default class Page3 extends React.Component {
           </h4>
         </div>
         <hr/>
-        <div><SlideShow num={3} styles={styles} sourceToDir="./img/p03/"/></div>
+        <SlideShow num={3} styles={styles} sourceToDir="./img/p03/"/>
       </div>
     );
   }
