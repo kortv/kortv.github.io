@@ -76,51 +76,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	"use strict";
 	var allModules = {};
-<<<<<<< HEAD
 	allModules.Page1 = React.createElement(_Page2.default, null);
 	allModules.Page2 = React.createElement(_Page4.default, null);
 	allModules.Page3 = React.createElement(_Page6.default, null);
 	console.log(allModules);
 	
 	if (typeof document !== 'undefined') {
-		ReactDOM.render(React.createElement(_Page6.default, null), document.getElementById('Page1'));
-	}
-	
-	var cleanAllInterval = function cleanAllInterval() {
-		for (var i = 1; i < 9999; i++) {
-			clearInterval(i);
-		}
-	};
-	var clearPreviousComponents = function clearPreviousComponents(arg) {
-		ReactDOM.unmountComponentAtNode(document.getElementById(arg));
-=======
-	allModules.Page1 = React.createElement(_Page2.default, {
-			__source: {
-					fileName: '../../../src/index.js',
-					lineNumber: 9
-			}
-	});
-	allModules.Page2 = React.createElement(_Page4.default, {
-			__source: {
-					fileName: '../../../src/index.js',
-					lineNumber: 10
-			}
-	});
-	allModules.Page3 = React.createElement(_Page6.default, {
-			__source: {
-					fileName: '../../../src/index.js',
-					lineNumber: 11
-			}
-	});
-	console.log(allModules);
-	
-	if (typeof document !== 'undefined') {
-			ReactDOM.render(React.createElement(_Page2.default, {
-					__source: {
-							fileName: '../../../src/index.js',
-							lineNumber: 15
-					}
-			}), document.getElementById('Page1'));
+			ReactDOM.render(React.createElement(_Page6.default, null), document.getElementById('Page1'));
 	}
 	
 	var cleanAllInterval = function cleanAllInterval() {
@@ -130,40 +92,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	};
 	var clearPreviousComponents = function clearPreviousComponents(arg) {
 			ReactDOM.unmountComponentAtNode(document.getElementById(arg));
->>>>>>> origin/master
 	};
 	
 	Reveal.addEventListener('slidechanged', function (event) {
 	
-<<<<<<< HEAD
-		cleanAllInterval();
-		var currentModule = event.currentSlide.attributes["id"].nodeValue,
-		    prevModule = event.previousSlide.attributes["id"].nodeValue;
-	
-		var _loop = function _loop(key) {
-			if (currentModule != key) {
-				setTimeout(function () {
-					clearPreviousComponents(key);
-				}, 1200);
-			}
-		};
-	
-		for (var key in allModules) {
-			_loop(key);
-		};
-	
-		ReactDOM.render(allModules[currentModule], document.getElementById(currentModule));
-	
-		// if (event.previousSlide.attributes["data-state"]) {
-		//     cleanAllInterval();
-		//     event.previousSlide.children[0].innerHTML = ""
-		// }
-		// if (event.currentSlide.attributes["data-state"]) {
-		//     var state = event.currentSlide.attributes["data-state"].nodeValue;
-		//     ReactDOM.render(components[state.toString()], event.currentSlide.children[0]);
-		//     components[state + "Fn"]()
-		// }
-=======
 			cleanAllInterval();
 			var currentModule = event.currentSlide.attributes["id"].nodeValue,
 			    prevModule = event.previousSlide.attributes["id"].nodeValue;
@@ -191,7 +123,6 @@ return /******/ (function(modules) { // webpackBootstrap
 			//     ReactDOM.render(components[state.toString()], event.currentSlide.children[0]);
 			//     components[state + "Fn"]()
 			// }
->>>>>>> origin/master
 	});
 
 /***/ },
@@ -232,7 +163,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function render() {
 	      return React.createElement(
 	        "div",
-<<<<<<< HEAD
 	        { className: _Page2.default.container },
 	        React.createElement("div", { className: _Page2.default.logoMbs }),
 	        React.createElement(
@@ -240,55 +170,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	          { className: _Page2.default.titleName },
 	          "«Разработка и принятие ",
 	          React.createElement("br", null),
-=======
-	        { className: _Page2.default.container, __source: {
-	            fileName: "../../../src/components/Page1/Page1.js",
-	            lineNumber: 7
-	          }
-	        },
-	        React.createElement("div", { className: _Page2.default.logoMbs, __source: {
-	            fileName: "../../../src/components/Page1/Page1.js",
-	            lineNumber: 8
-	          }
-	        }),
-	        React.createElement(
-	          "h2",
-	          { className: _Page2.default.titleName, __source: {
-	              fileName: "../../../src/components/Page1/Page1.js",
-	              lineNumber: 9
-	            }
-	          },
-	          "«Разработка и принятие ",
-	          React.createElement("br", {
-	            __source: {
-	              fileName: "../../../src/components/Page1/Page1.js",
-	              lineNumber: 9
-	            }
-	          }),
->>>>>>> origin/master
 	          "управленческих решений»"
 	        ),
 	        React.createElement(
 	          "h2",
-<<<<<<< HEAD
 	          { className: _Page2.default.authorName },
 	          "Казарин Валерий Петрович"
 	        ),
 	        React.createElement("div", { className: _Page2.default.pic, alt: "Обложка" })
-=======
-	          { className: _Page2.default.authorName, __source: {
-	              fileName: "../../../src/components/Page1/Page1.js",
-	              lineNumber: 10
-	            }
-	          },
-	          "Казарин Валерий Петрович"
-	        ),
-	        React.createElement("div", { className: _Page2.default.pic, alt: "Обложка", __source: {
-	            fileName: "../../../src/components/Page1/Page1.js",
-	            lineNumber: 11
-	          }
-	        })
->>>>>>> origin/master
 	      );
 	    }
 	  }]);
@@ -304,11 +193,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-<<<<<<< HEAD
 	module.exports = {"_img":"Page1___img__cy35A","pic":"Page1__pic__2i4ll","_logoMbs":"Page1___logoMbs__2-D6f","logoMbs":"Page1__logoMbs__34U2_","titleName":"Page1__titleName__PLgkj","authorName":"Page1__authorName__vECnQ","container":"Page1__container__135K7"};
-=======
-	module.exports = {"_img":"cy35AJKyC6Y1xbFvRRZyO","pic":"_2i4llQUARZX_LQ-DH7k94A","_logoMbs":"_2-D6fVggfWjmO2ZnztT0gA","logoMbs":"_34U2_3XFwAFkaMM7Q2fahw","titleName":"PLgkjsaacb261V0UVbcqJ","authorName":"vECnQTF_dqzxxw9KafAoK","container":"_135K778qxTTeHjhmpYhUzp"};
->>>>>>> origin/master
 
 /***/ },
 /* 3 */
@@ -348,7 +233,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function render() {
 	      return React.createElement(
 	        "div",
-<<<<<<< HEAD
 	        { className: _Page2.default.container },
 	        React.createElement("div", { className: _Page2.default.logoMbs, src: "./img/Logo_MBS.svg", onerror: "this.onerror=null; this.src='./img/Logo_MBS.png'" }),
 	        React.createElement(
@@ -357,46 +241,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	          React.createElement(
 	            "strong",
 	            null,
-=======
-	        { className: _Page2.default.container, __source: {
-	            fileName: "../../../src/components/Page2/Page2.js",
-	            lineNumber: 7
-	          }
-	        },
-	        React.createElement("div", { className: _Page2.default.logoMbs, src: "./img/Logo_MBS.svg", onerror: "this.onerror=null; this.src='./img/Logo_MBS.png'", __source: {
-	            fileName: "../../../src/components/Page2/Page2.js",
-	            lineNumber: 8
-	          }
-	        }),
-	        React.createElement(
-	          "div",
-	          { className: _Page2.default.mainText, __source: {
-	              fileName: "../../../src/components/Page2/Page2.js",
-	              lineNumber: 9
-	            }
-	          },
-	          React.createElement(
-	            "strong",
-	            {
-	              __source: {
-	                fileName: "../../../src/components/Page2/Page2.js",
-	                lineNumber: 10
-	              }
-	            },
->>>>>>> origin/master
 	            "Moscow Business School"
 	          ),
 	          " – крупнейший центр бизнес-образования, осуществляющий профессиональную подготовку специалистов и руководителей российских и западных компаний. Слушателям предоставляется широкий выбор программ MBA, курсов повышения квалификации, семинаров и тренингов по самым востребованным направлениям. Обучение в Moscow Business School полностью соответствует современным образовательным стандартам и проводится с применением актуальных информационно-коммуникационных технологий."
 	        ),
-<<<<<<< HEAD
 	        React.createElement("div", { className: _Page2.default.mainPic })
-=======
-	        React.createElement("div", { className: _Page2.default.mainPic, __source: {
-	            fileName: "../../../src/components/Page2/Page2.js",
-	            lineNumber: 12
-	          }
-	        })
->>>>>>> origin/master
 	      );
 	    }
 	  }]);
@@ -412,11 +261,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-<<<<<<< HEAD
 	module.exports = {"_img":"Page2___img__2q5vo","mainPic":"Page2__mainPic__kih8S","_logoMbs":"Page2___logoMbs__3wGc7","logoMbs":"Page2__logoMbs__3i1Qf","mainText":"Page2__mainText__Q8Fnv","container":"Page2__container__3W86b"};
-=======
-	module.exports = {"_img":"_2q5voGORRarPgGS6H2LQdA","mainPic":"kih8SoNfe-aehtNcOYVSi","_logoMbs":"_3wGc7fym2gIUihBU8LD7gW","logoMbs":"_3i1QfsUd5kmnPGvyfh1gR","mainText":"Q8Fnv76CCvzC1wmUC9k4z","container":"_3W86b2XZfe1uX4wWh-OXk1"};
->>>>>>> origin/master
 
 /***/ },
 /* 5 */
@@ -464,7 +309,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function render() {
 	      return React.createElement(
 	        'div',
-<<<<<<< HEAD
 	        { className: _Page2.default.flexbox },
 	        React.createElement(
 	          'div',
@@ -510,77 +354,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	        ),
 	        React.createElement('hr', null),
 	        React.createElement(_SlideShow2.default, { num: 3, styles: _Page2.default, sourceToDir: './img/p03/' })
-=======
-	        { className: _Page2.default.flexbox, __source: {
-	            fileName: '../../../src/components/Page3/Page3.js',
-	            lineNumber: 11
-	          }
-	        },
-	        React.createElement(
-	          'div',
-	          {
-	            __source: {
-	              fileName: '../../../src/components/Page3/Page3.js',
-	              lineNumber: 12
-	            }
-	          },
-	          React.createElement(
-	            'h1',
-	            {
-	              __source: {
-	                fileName: '../../../src/components/Page3/Page3.js',
-	                lineNumber: 13
-	              }
-	            },
-	            'MBS Mobile'
-	          ),
-	          React.createElement(
-	            'h6',
-	            {
-	              __source: {
-	                fileName: '../../../src/components/Page3/Page3.js',
-	                lineNumber: 14
-	              }
-	            },
-	            'приложение для iPhone и Android'
-	          ),
-	          React.createElement(
-	            'h4',
-	            {
-	              __source: {
-	                fileName: '../../../src/components/Page3/Page3.js',
-	                lineNumber: 15
-	              }
-	            },
-	            'Скидка 15% на семинары Moscow Business School при регистрации через приложение.',
-	            React.createElement('br', {
-	              __source: {
-	                fileName: '../../../src/components/Page3/Page3.js',
-	                lineNumber: 15
-	              }
-	            }),
-	            'Приложение включает в себя каталог семинаров Moscow Business School, оно также предназначено для оперативного получения информации о специальных акциях, существующих услугах и сервисах.',
-	            React.createElement('br', {
-	              __source: {
-	                fileName: '../../../src/components/Page3/Page3.js',
-	                lineNumber: 16
-	              }
-	            }),
-	            'Действует скидка 15% на участие в семинарах Moscow Business School при регистрации через это приложение.'
-	          )
-	        ),
-	        React.createElement('hr', {
-	          __source: {
-	            fileName: '../../../src/components/Page3/Page3.js',
-	            lineNumber: 20
-	          }
-	        }),
-	        React.createElement(_SlideShow2.default, { num: 3, styles: _Page2.default, sourceToDir: './img/p03/', __source: {
-	            fileName: '../../../src/components/Page3/Page3.js',
-	            lineNumber: 21
-	          }
-	        })
->>>>>>> origin/master
 	      );
 	    }
 	  }]);
@@ -614,15 +387,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    } else if (this.props.selected == 0) {
 	      className = " animated05 fadeInRight";
 	    }
-<<<<<<< HEAD
 	    return React.createElement("img", { className: styles.image + className, src: this.props.sourceToDir + this.props.index + ".png" });
-=======
-	    return React.createElement("img", { className: styles.image + className, src: this.props.sourceToDir + this.props.index + ".png", __source: {
-	        fileName: "../../../src/components/_SlideShow/_SlideShow.js",
-	        lineNumber: 14
-	      }
-	    });
->>>>>>> origin/master
 	  }
 	});
 	
@@ -654,7 +419,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	  },
 	
 	  render: function render() {
-<<<<<<< HEAD
 	    var boards = Array(this.props.num);
 	    for (var i = 0; i < boards.length; i++) {
 	      boards[i] = 1;
@@ -663,29 +427,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	      var isSelected = this.state.selectedIndex % this.props.num - key;
 	      return React.createElement(Image, { index: key + 1, selected: isSelected, key: key,
 	        num: this.props.num, sourceToDir: this.props.sourceToDir });
-=======
-	    var boards = Array(this.props.num).fill(1).map((function (val, key) {
-	      var isSelected = this.state.selectedIndex % this.props.num - key;
-	      return React.createElement(Image, { index: key + 1, selected: isSelected, key: key,
-	        num: this.props.num, sourceToDir: this.props.sourceToDir, __source: {
-	          fileName: "../../../src/components/_SlideShow/_SlideShow.js",
-	          lineNumber: 47
-	        }
-	      });
->>>>>>> origin/master
 	    }).bind(this));
 	
 	    return React.createElement(
 	      "div",
-<<<<<<< HEAD
 	      { onClick: this.onClick, className: styles.images },
-=======
-	      { onClick: this.onClick, className: styles.images, __source: {
-	          fileName: "../../../src/components/_SlideShow/_SlideShow.js",
-	          lineNumber: 52
-	        }
-	      },
->>>>>>> origin/master
 	      boards
 	    );
 	  }
@@ -698,11 +444,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-<<<<<<< HEAD
 	module.exports = {"_img":"Page3___img__2elmR","_logoMbs":"Page3___logoMbs__zEqjB","images":"Page3__images__xYD0V","image":"Page3__image__33lsj","flexbox":"Page3__flexbox__2LDee","p03":"Page3__p03__3_LTG"};
-=======
-	module.exports = {"_img":"_2elmR5BCVTrPH2oaTD8NiD","_logoMbs":"zEqjB6YcLyYAxw2nel13s","images":"xYD0V__XhLafR1Sl4kZla","image":"_33lsjA82hAOYGKsOAJ7bTO","flexbox":"_2LDeedRWMznUQAAif9lNdU"};
->>>>>>> origin/master
 
 /***/ },
 /* 8 */
