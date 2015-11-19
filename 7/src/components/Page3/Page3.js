@@ -9,16 +9,22 @@ export default class Page3 extends React.Component {
   render() {
     return (
       <div className={styles.flexbox}>
-        <div>
+        <div className={styles.p03}>
+          <hr/>
           <h1>MBS Mobile</h1>
-          <h6>приложение для iPhone и Android</h6>
-          <h4>Скидка 15% на семинары Moscow Business School при регистрации через приложение.<br/>
+          <h4>приложение для iPhone и Android</h4>
+          <div className={styles.flexbox}>
+            <h4>Приложение в Google Play<br/><img src="./img/p03/x2.png" alt=""/></h4>
+            <h4>Приложение в Applw Store<br/><img src="./img/p03/x3.png" alt=""/></h4>
+          </div>
+
+          <h3>Скидка 15% на семинары Moscow Business School при регистрации через приложение.<br/>
             Приложение включает в себя каталог семинаров Moscow Business School, оно также предназначено для оперативного получения информации о специальных акциях, существующих услугах и сервисах.<br/>
             Действует скидка 15% на участие в семинарах Moscow Business School при регистрации через это приложение.
-          </h4>
+          </h3>
         </div>
         <hr/>
-        <div><SlideShow num={3} styles={styles} sourceToDir="./img/p03/"/></div>
+        <SlideShow num={3} styles={styles} sourceToDir="./img/p03/"/>
       </div>
     );
   }

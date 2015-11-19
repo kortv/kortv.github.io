@@ -9,9 +9,10 @@ let allModules={};
 allModules.Page1 = <Page1/>;
 allModules.Page2 = <Page2/>;
 allModules.Page3 = <Page3/>;
+console.log(allModules)
 
 if (typeof document !== 'undefined') {
-  ReactDOM.render(<Page1/>, document.getElementById('Page1'));
+  ReactDOM.render(<Page3/>, document.getElementById('Page1'));
 } 
 
 
@@ -28,7 +29,6 @@ Reveal.addEventListener('slidechanged', function(event) {
 	cleanAllInterval()
 	let currentModule = event.currentSlide.attributes["id"].nodeValue,
 			prevModule = event.previousSlide.attributes["id"].nodeValue;
-
 
 	for (let key in allModules) {
 	  if (currentModule != key) {

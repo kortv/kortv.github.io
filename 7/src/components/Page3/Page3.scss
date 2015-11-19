@@ -1,4 +1,7 @@
 @import "./../scss/constants";
+*{
+  margin: 0;
+}
 
 .images .image {
   position: absolute;
@@ -6,9 +9,9 @@
   height : 592px;
   opacity: 0;
 }
-  .images {
-  margin: 50px;
-  position: relative;
+.images {
+    padding-left: 100px;
+    margin-right: -100px;
   width : 411px;
   height : 592px;
   overflow: hidden;
@@ -17,11 +20,37 @@
   display: flex;
   flex-direction: row;
   flex-flow: row;
+  margin-left: 60px;
+  margin-top: 50px;
 }
-.flexbox div {
-  flex: 1 49%;
+.flexbox div, .flexbox h4, {
+  flex: 1;
 }
-.flexbox hr {
+.flexbox>hr {
   width: 1px;
-  transform: rotation(90grad)
+  transform: rotation(90grad);
+  background-color: gray;
+
+}
+.p03 {
+
+  h1 {
+    font-family: Georgia;
+    font-size: 56px;
+    color: #191919;
+    font-weight: normal;
+    border-bottom: 4px solid red;
+    width: 315px;
+  }
+  hr{
+    width: 95%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: gray;
+  }
+  h3{
+    margin-top: 50px;
+    padding-right:20px;
+    font-weight: normal;
+  }
 }

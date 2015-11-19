@@ -42,7 +42,11 @@ let SlideShow = React.createClass({
   },
 
   render: function() {
-    let boards = Array(this.props.num).fill(1).map(function  (val, key) { 
+    let boards = Array(this.props.num)
+    for (var i = 0; i < boards.length; i++) {
+      boards[i]=1;
+    };
+    boards = boards.map(function  (val, key) { 
       let isSelected = this.state.selectedIndex%this.props.num - key;
       return <Image index={key+1} selected={isSelected} key={key}
         num={this.props.num} sourceToDir={this.props.sourceToDir}/>
