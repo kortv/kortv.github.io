@@ -1,4 +1,5 @@
 # kortv.github.io
-Folder 5 - Web application interactive books
+Folder 5 - Test example of Web application interactive electronic book
+Folder 7 - Work flow of Web application interactive books
 </br>
 Online example: http://kortv.github.io/5/index.html
