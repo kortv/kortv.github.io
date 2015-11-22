@@ -39,15 +39,5 @@ Reveal.addEventListener('slidechanged', function(event) {
 	};
 	
 	ReactDOM.render(allModules[currentModule], document.getElementById(currentModule));
-	
 
-    // if (event.previousSlide.attributes["data-state"]) {
-    //     cleanAllInterval();
-    //     event.previousSlide.children[0].innerHTML = ""
-    // }
-    // if (event.currentSlide.attributes["data-state"]) {
-    //     var state = event.currentSlide.attributes["data-state"].nodeValue;
-    //     ReactDOM.render(components[state.toString()], event.currentSlide.children[0]);
-    //     components[state + "Fn"]()
-    // }
 })                  

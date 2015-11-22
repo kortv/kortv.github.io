@@ -6,7 +6,7 @@ let Image = React.createClass({
   render: function() {
     let className = "";
     if (this.props.selected == 1 || this.props.selected == -this.props.num+1) {
-      className = " animated05 fadeOut";
+      className = " animated05 fadeOutLeft";
     } else if (this.props.selected == 0) {
       className = " animated05 fadeInRight";
     }

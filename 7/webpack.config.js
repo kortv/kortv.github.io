@@ -24,7 +24,8 @@ module.exports = {
           }
         },
 
-      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?module&localIdentName=[name]__[local]__[hash:base64:5]!autoprefixer-loader!resolve-url!sass?sourceMap")},
+      /*{ test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?module&localIdentName=[name]__[local]__[hash:base64:5]!autoprefixer-loader!resolve-url!sass?sourceMap")},*/
+      { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?module&localIdentName=[name]__[local]__[hash:base64:5]!resolve-url!sass?sourceMap")},
       { test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader?module!cssnext-loader")}
     ]
   },

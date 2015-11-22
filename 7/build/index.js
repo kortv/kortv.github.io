@@ -82,47 +82,37 @@ return /******/ (function(modules) { // webpackBootstrap
 	console.log(allModules);
 	
 	if (typeof document !== 'undefined') {
-			ReactDOM.render(React.createElement(_Page6.default, null), document.getElementById('Page1'));
+		ReactDOM.render(React.createElement(_Page6.default, null), document.getElementById('Page1'));
 	}
 	
 	var cleanAllInterval = function cleanAllInterval() {
-			for (var i = 1; i < 9999; i++) {
-					clearInterval(i);
-			}
+		for (var i = 1; i < 9999; i++) {
+			clearInterval(i);
+		}
 	};
 	var clearPreviousComponents = function clearPreviousComponents(arg) {
-			ReactDOM.unmountComponentAtNode(document.getElementById(arg));
+		ReactDOM.unmountComponentAtNode(document.getElementById(arg));
 	};
 	
 	Reveal.addEventListener('slidechanged', function (event) {
 	
-			cleanAllInterval();
-			var currentModule = event.currentSlide.attributes["id"].nodeValue,
-			    prevModule = event.previousSlide.attributes["id"].nodeValue;
+		cleanAllInterval();
+		var currentModule = event.currentSlide.attributes["id"].nodeValue,
+		    prevModule = event.previousSlide.attributes["id"].nodeValue;
 	
-			var _loop = function _loop(key) {
-					if (currentModule != key) {
-							setTimeout(function () {
-									clearPreviousComponents(key);
-							}, 1200);
-					}
-			};
+		var _loop = function _loop(key) {
+			if (currentModule != key) {
+				setTimeout(function () {
+					clearPreviousComponents(key);
+				}, 1200);
+			}
+		};
 	
-			for (var key in allModules) {
-					_loop(key);
-			};
+		for (var key in allModules) {
+			_loop(key);
+		};
 	
-			ReactDOM.render(allModules[currentModule], document.getElementById(currentModule));
-	
-			// if (event.previousSlide.attributes["data-state"]) {
-			//     cleanAllInterval();
-			//     event.previousSlide.children[0].innerHTML = ""
-			// }
-			// if (event.currentSlide.attributes["data-state"]) {
-			//     var state = event.currentSlide.attributes["data-state"].nodeValue;
-			//     ReactDOM.render(components[state.toString()], event.currentSlide.children[0]);
-			//     components[state + "Fn"]()
-			// }
+		ReactDOM.render(allModules[currentModule], document.getElementById(currentModule));
 	});
 
 /***/ },
@@ -309,24 +299,28 @@ return /******/ (function(modules) { // webpackBootstrap
 	    value: function render() {
 	      return React.createElement(
 	        'div',
-	        { className: _Page2.default.flexbox },
+	        { className: _Page2.default.container },
 	        React.createElement(
 	          'div',
 	          { className: _Page2.default.p03 },
 	          React.createElement('hr', null),
 	          React.createElement(
-	            'h1',
+	            'div',
 	            null,
-	            'MBS Mobile'
-	          ),
-	          React.createElement(
-	            'h4',
-	            null,
-	            'приложение для iPhone и Android'
+	            React.createElement(
+	              'h1',
+	              null,
+	              'MBS Mobile'
+	            ),
+	            React.createElement(
+	              'h4',
+	              null,
+	              'приложение для iPhone и Android'
+	            )
 	          ),
 	          React.createElement(
 	            'div',
-	            { className: _Page2.default.flexbox },
+	            { className: _Page2.default.container2 },
 	            React.createElement(
 	              'h4',
 	              null,
@@ -383,7 +377,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  render: function render() {
 	    var className = "";
 	    if (this.props.selected == 1 || this.props.selected == -this.props.num + 1) {
-	      className = " animated05 fadeOut";
+	      className = " animated05 fadeOutLeft";
 	    } else if (this.props.selected == 0) {
 	      className = " animated05 fadeInRight";
 	    }
@@ -444,7 +438,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
-	module.exports = {"_img":"Page3___img__2elmR","_logoMbs":"Page3___logoMbs__zEqjB","images":"Page3__images__xYD0V","image":"Page3__image__33lsj","flexbox":"Page3__flexbox__2LDee","p03":"Page3__p03__3_LTG"};
+	module.exports = {"_img":"Page3___img__2elmR","_logoMbs":"Page3___logoMbs__zEqjB","container":"Page3__container__v1Gl4","p03":"Page3__p03__3_LTG","container2":"Page3__container2__3dtIL","images":"Page3__images__xYD0V","image":"Page3__image__33lsj"};
 
 /***/ },
 /* 8 */
