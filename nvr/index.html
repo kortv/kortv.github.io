@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Models</title>
+    <meta name="description" content="Models — A-Frame">
+    <script src="dist/aframe.js"></script>
+      <link rel="import" href="templates/index.html">
+  </head>
+  <body>
+    <a-scene fog="type: linear; color: #222; far: 6; near: -6" >
+
+      <a-entity position="0 1.1 -3"
+                geometry="primitive: plane; translate: 0 0 0"
+                material="color: green; shader: flat; transparent: true; opacity: 0.01">
+      </a-entity>
+
+  <a-entity camera="fov: 90"
+            look-controls="enabled: true"
+            wasd-controls="enabled: true">
+    <a-entity id="cursor"
+              position="0 0 -1"
+              geometry="primitive: ring; radiusOuter: 0.20; radiusInner: 0.14; segmentsTheta: 64"
+              material="color: gray"
+              cursor="timeout: 1500; fuse: true">
+      <a-mouseenter target="#cursor" material="color: springgreen"></a-mouseenter>
+      <a-mouseleave target="#cursor" material="color: gray"></a-mouseleave>
+      <a-animation begin="hovering"
+                   easing="ease-in"
+                   attribute="scale"
+                   from="1 1 1"
+                   to="0.2 0.2 0.2"
+                   dur="1500"></a-animation>
+    </a-entity>
+  </a-entity>
+
+      <a-entity id="model1" loader="src: url(models/Brain_Model.dae); format: collada" scale="0 0 0" visible="false" position="0 1 -4">
+        <a-animation class="rotation" attribute="rotation" begin="rotate" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="0"></a-animation>
+        <a-animation class="anim1" attribute="visible" begin="m11" to="true" repeat="0"></a-animation>
+        <a-animation class="anim1" attribute="scale" begin="m11" to="1 1 1" dur="1500" easing="ease-in-out-cubic" repeat="0"></a-animation>
+
+        <a-animation class="anim2" attribute="scale" begin="m100" from="1 1 1" to="10 10 10" dur="1000" easing="ease-in-cubic" repeat="0"></a-animation>
+        <a-animation class="anim2" attribute="position" begin="m600" to="0 0 200" dur="500" repeat="0"></a-animation>
+        <a-animation class="anim2" attribute="visible" begin="m1100" to="false" repeat="0"></a-animation>
+      </a-entity>
+
+      <a-entity id="model2" loader="src: url(models/ni.dae); format: collada" visible="false" scale="0 0 0" position="0 0 -4">
+<!--    <a-animation attribute="rotation" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="inifite"></a-animation>
+        <a-animation attribute="visible" begin="4000" to="true" repeat="0"></a-animation>
+        <a-animation attribute="scale" begin="4000" to="1 1 1" dur="1500" easing="linear" repeat="0"></a-animation>
+        <a-animation attribute="scale" begin="8000" from="1 1 1" to="100 100 100" dur="1000" easing="linear" repeat="0"></a-animation>
+        <a-animation attribute="position" begin="8500" to="0 0 200" dur="500" repeat="0"></a-animation>
+        <a-animation attribute="visible" begin="9000" to="false" repeat="0"></a-animation> -->
+      </a-entity>
+
+      <a-entity id="model3" loader="src: url(models/dna3ds.dae); format: collada" visible="false" scale="1 1 1" position="0 1 -4">
+        <a-animation class="rotation" attribute="rotation" begin="rotate" from="0 -30 0" to="0 330 0" dur="15000" easing="linear" repeat="inifite"></a-animation>
+        <a-animation attribute="visible" begin="m3" to="true" repeat="0" dur="1"></a-animation>
+        <a-animation attribute="scale" begin="m3" from="0 0 0" to="1 1 1" dur="1500" easing="ease-in-out-cubic" repeat="0"></a-animation>
+      </a-entity>
+
+      <a-sky></a-sky>
+
+    </a-scene>
+
+    <script src="main.js"></script>
+  </body>
+</html>
