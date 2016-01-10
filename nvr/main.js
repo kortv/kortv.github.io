@@ -33,7 +33,7 @@ document.querySelector('a-entity').addEventListener('click', function () {
 
 	//model1.innerHTML = mod1b;
 	model2.innerHTML = mod2a;
-		console.log(increment);
+		console.log('I was clicked!',increment);
 		break;
 	case 3: model2.innerHTML = mod2b;
 		model3.emit('m3');
