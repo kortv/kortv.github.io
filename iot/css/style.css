@@ -4,15 +4,29 @@ body {
 }
 
 #bg1 {
-    height: 600px;
+    height: 680px;
     background-image: url("../img/bg1.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: #242424;
 }
-
+#bg1 {
+    position: relative;
+    background-color: #242424;
+}
 #bg1 h1 {
-    margin-top: 250px;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 11%;
+    right: 10%;
+    left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bg1 img {
+    margin: auto;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -104,7 +118,6 @@ nav.navbar {
 }
 footer {
     background-color: #222;
-
 }
 .btn-group > button.btn {
     height: 76px;    
