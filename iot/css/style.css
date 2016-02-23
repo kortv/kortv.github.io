@@ -1,6 +1,7 @@
 body {
     position: relative;
     font-family: 'PT Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 
 #bg1 {
