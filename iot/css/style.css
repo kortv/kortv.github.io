@@ -89,10 +89,9 @@ nav.navbar {
 
 .carousel-caption {
     position: absolute;
-    /* width: 30%; */
-    /* top: 15%; */
+    top: 10%;
     bottom: 7%;
-    left: 8%;
+    left: 11%;
     right: 59%;
     z-index: 10;
     padding-top: 20px;
@@ -108,13 +107,14 @@ nav.navbar {
     left: 62%;
     right: 4%;
     z-index: 10;
-    padding-top: 20px;
-    color: #797979;
-    text-shadow: 0 0 0;
+    top: 9%;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
 }
 
 .carousel-caption h1 {
     color: #ff9e02;
+    text-shadow: 0 0 0;
 }
 footer {
     background-color: #222;
@@ -152,10 +152,12 @@ footer {
     #video .carousel-caption {
         left: 8%;
         bottom: 1%;
+        top: 1%;
     }
     .carousel-caption {
         right: 10%;
-        bottom: 1%;
+        bottom: 9%;
+        top: 1%;
     }
     .btn-group > button.btn {
         height: 40px;    
@@ -200,4 +202,9 @@ footer {
     width: 742.609px;
     height: 420.281px;
     }
+}
+.flex {
+    display: flex;
+    align-items: center;
+    height: 200px;
 }
