@@ -12,3 +12,8 @@ Online example: http://kortv.github.io/7/index_build.html
 Folder nvr - Test example WebVR with aframe.
 <br/>
 Online example: http://kortv.github.io/nvr/index.html
+<br/>
+<br/>
+Folder iot - Template for future site our team.
+<br/>
+Online example: http://kortv.github.io/iot/index.html
