@@ -17,3 +17,9 @@ Online example: http://kortv.github.io/nvr/index.html
 Folder iot - Template for future site our team.
 <br/>
 Online example: http://kortv.github.io/iot/index.html
+<br/>
+<br/>
+Folder react-sort - online link for my answer on challenge of JS Raccoon
+<br/>the code of my solution https://github.com/kortv/react-sort-and-search
+<br/>
+Online example: http://kortv.github.io/react-sort/index.html
