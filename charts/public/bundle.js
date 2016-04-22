@@ -25456,9 +25456,9 @@
 	
 	module.exports = _react2.default.createElement(
 	  _reactRouter.Route,
-	  { path: '/', component: _App2.default },
+	  { path: '/charts', component: _App2.default },
 	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _Home2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/:barCount/:minHeight/:maxHeight', component: _RandomBars2.default })
+	  _react2.default.createElement(_reactRouter.Route, { path: '/charts/:barCount/:minHeight/:maxHeight', component: _RandomBars2.default })
 	);
 
 /***/ },
@@ -25488,7 +25488,7 @@
 	        null,
 	        _react2.default.createElement(
 	          _reactRouter.Link,
-	          { to: '/' },
+	          { to: '/charts/' },
 	          'Home'
 	        )
 	      ),
@@ -25539,7 +25539,7 @@
 	  var rand3 = Math.floor(Math.random() * 100);
 	  return _react2.default.createElement(
 	    _reactRouter.Link,
-	    { to: '/' + rand1 + '/' + rand2 + '/' + rand3 },
+	    { to: '/charts/' + rand1 + '/' + rand2 + '/' + rand3 },
 	    'Custom Charts'
 	  );
 	}
