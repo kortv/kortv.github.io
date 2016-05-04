@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "type": "TextComp",
+    "content": [
+      {
+        "header": "Pivot is fun, fresh & functional",
+        "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "Values",
+    "content": [
+      {
+        "icon": 123,
+        "text": "String"
+      },
+      {
+        "icon": 456,
+        "text": "string2"
+      },
+      {
+        "icon": 456,
+        "text": "string2"
+      }
+    ]
+  }
+]
