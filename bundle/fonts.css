@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "OfficinaSerifBookITC";
+    src: url('./fonts/OfficinaSerifBookITC/OfficinaSerifBookITC-Regular.eot?#iefix') format('embedded-opentype');
+    src: url('./fonts/OfficinaSerifBookITC/OfficinaSerifBookITC-Regular.woff') format('woff'), url('./fonts/OfficinaSerifBookITC/OfficinaSerifBookITC-Regular.ttf') format('truetype'), url('./fonts/OfficinaSerifBookITC/OfficinaSerifBookITC-Regular.svg#OfficinaSerifBookITC-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OfficinaSerifMediumITCRegular";
+    src: url('./fonts/OfficinaSerifMediumITCRegular/OfficinaSerifMediumITC-Regular.svg#OfficinaSerifMediumITC-Regular') format('svg');
+    src: url('./fonts/OfficinaSerifMediumITCRegular/OfficinaSerifMediumITC-Regular.woff') format('woff'), url('./fonts/OfficinaSerifMediumITCRegular/OfficinaSerifMediumITC-Regular.eot?#iefix') format('embedded-opentype'), url('./fonts/OfficinaSerifMediumITCRegular/OfficinaSerifMediumITC-Regular.otf'), url('./fonts/OfficinaSerifMediumITCRegular/OfficinaSerifMediumITC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "PFDinDisplayPro-Light";
+    src: url('./fonts/PFDinDisplayPro-Light/PFDinDisplayPro-Light.eot?#iefix') format('embedded-opentype');
+    src: url('./fonts/PFDinDisplayPro-Light/PFDinDisplayPro-Light.woff') format('woff'), url('./fonts/PFDinDisplayPro-Light/PFDinDisplayPro-Light.ttf')  format('truetype'), url('./fonts/PFDinDisplayPro-Light/PFDinDisplayPro-Light.svg#PFDinDisplayPro-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OfficinaSerifMedium";
+    src: url("./fonts/OfficinaSerifMedium/OfficinaSerifMedium.eot");
+    src: url("./fonts/OfficinaSerifMedium/OfficinaSerifMedium.eot?#iefix") format("embedded-opentype"), url("./fonts/OfficinaSerifMedium/OfficinaSerifMedium.woff") format("woff"), url("./fonts/OfficinaSerifMedium/OfficinaSerifMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}

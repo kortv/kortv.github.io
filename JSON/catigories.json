@@ -1,0 +1,229 @@
+{
+    "data": [{
+        "id": 1,
+        "title": "\u0421a\u043d\u0434\u0432\u0438\u0447\u0438",
+        "image": "sandwiches.svg",
+        "created_at": "2016-10-26 04:45:06",
+        "updated_at": "2016-10-26 04:45:06",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 2,
+        "title": "\u041a\u0443\u0440\u0438\u0446\u0430",
+        "image": "chicken.svg",
+        "created_at": "2016-10-26 04:45:07",
+        "updated_at": "2016-10-26 04:45:07",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 3,
+        "title": "\u0411\u0430c\u043a\u0435\u0442\u044b",
+        "image": "baskets.svg",
+        "created_at": "2016-10-26 04:45:08",
+        "updated_at": "2016-10-26 04:45:08",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 4,
+        "title": "\u0421\u043d\u044d\u043a\u0438",
+        "image": "snacks.svg",
+        "created_at": "2016-10-26 04:45:08",
+        "updated_at": "2016-10-26 04:45:08",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 5,
+        "title": "C\u0430\u043b\u0430\u0442\u044b",
+        "image": "salats.svg",
+        "created_at": "2016-10-26 04:45:08",
+        "updated_at": "2016-10-26 04:45:08",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 6,
+        "title": "\u0414\u0435\u0441\u0435\u0440\u0442\u044b",
+        "image": "desserts.svg",
+        "created_at": "2016-10-26 04:45:08",
+        "updated_at": "2016-10-26 04:45:08",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 7,
+        "title": "\u041d\u0430\u043f\u0438\u0442\u043a\u0438",
+        "image": "drinks.svg",
+        "created_at": "2016-10-26 04:45:09",
+        "updated_at": "2016-10-26 04:45:09",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 8,
+        "title": "\u041a\u043e\u043c\u0431\u043e",
+        "image": "smart_choice.svg",
+        "created_at": "2016-10-26 04:45:11",
+        "updated_at": "2016-10-26 04:45:11",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 9,
+        "title": "\u0417\u0430\u0432\u0442\u0440\u0430\u043a",
+        "image": "breakfast.svg",
+        "created_at": "2016-10-26 04:45:11",
+        "updated_at": "2016-10-26 04:45:11",
+        "is_active": 1,
+        "is_breakfast": 1
+    }, {
+        "id": 10,
+        "title": "\u0421\u0435\u0437\u043e\u043d \u0431\u0430\u0440\u0431\u0435\u043a\u044e",
+        "image": "bbq.svg",
+        "created_at": "2016-10-26 04:45:11",
+        "updated_at": "2016-10-26 04:45:11",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 11,
+        "title": "\u0410\u0437\u0438\u0430\u0442\u0441\u043a\u043e\u0435 \u043c\u0435\u043d\u044e",
+        "image": "asian.svg",
+        "created_at": "2016-10-26 04:45:11",
+        "updated_at": "2016-10-26 04:45:11",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 12,
+        "title": "\u0421\u043e\u0443\u0441\u044b",
+        "image": "Sauces.svg",
+        "created_at": "2016-10-26 04:45:11",
+        "updated_at": "2016-10-26 04:45:11",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 13,
+        "title": "\u0421\u044b\u0440\u043d\u043e\u0435 \u043c\u0435\u043d\u044e",
+        "image": "cheese.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 14,
+        "title": "\u0421\u0430\u043d\u0434\u0435\u0440\u0441",
+        "image": "sanders.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 15,
+        "title": "\u041f\u0430\u0442\u0438 \u0411\u0430\u0441\u043a\u0435\u0442",
+        "image": "party_basket.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 16,
+        "title": "\u041d\u043e\u0436\u043a\u0438",
+        "image": "drumsticks.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 17,
+        "title": "\u041c\u0435\u043d\u044e \u043e\u0442 39 \u0440\u0443\u0431\u043b\u0435\u0439",
+        "image": "menu_for_39.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 18,
+        "title": "\u0422\u0435\u0445\u0430\u0441\u0441\u043a\u0438\u0439 BBQ",
+        "image": "bbq.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 19,
+        "title": "2 \u0437\u0430 69 \u0440\u0443\u0431\u043b\u0435\u0439",
+        "image": "69_rub.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 20,
+        "title": "\u0421\u043c\u0430\u0440\u0442 \u0411\u0430\u0441\u043a\u0435\u0442",
+        "image": "99_rub.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 21,
+        "title": "\u041b\u0435\u0442\u043d\u0435\u0435 \u043c\u0435\u043d\u044e",
+        "image": "summer_menu.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 22,
+        "title": "\u041a\u0443\u043f\u043e\u043d\u044b",
+        "image": "coupons.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 23,
+        "title": "\u041a\u043e\u043c\u0431\u043e",
+        "image": "combo.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 24,
+        "title": "\u0421\u0443\u043f\u0435\u0440 \u0411\u0430\u0441\u043a\u0435\u0442",
+        "image": "super_basket.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 25,
+        "title": "i-Twister \u043b\u0435\u0442\u043d\u0438\u0439",
+        "image": "i_twister_summer.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 26,
+        "title": "\u041c\u043e\u0445\u0438\u0442\u043e \u041a\u043e\u043c\u0431\u043e",
+        "image": "mohito_combo.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 0,
+        "is_breakfast": 0
+    }, {
+        "id": 27,
+        "title": "\u041a\u0435\u043d\u0442\u0443\u043a\u043a\u0438 BBQ",
+        "image": "mobile_kentuki_bbq.svg",
+        "created_at": "2016-10-26 04:45:12",
+        "updated_at": "2016-10-26 04:45:12",
+        "is_active": 1,
+        "is_breakfast": 0
+    }, {
+        "id": 28,
+        "title": "\u041a\u0443\u0440\u0438\u0446\u0430 \u043e\u0442 49 \u0440\u0443\u0431",
+        "image": "chicken_49.svg",
+        "created_at": "2016-10-26 04:45:13",
+        "updated_at": "2016-10-26 04:45:13",
+        "is_active": 0,
+        "is_breakfast": 0
+    }],
+    "total": 28,
+    "X-Session": "72708b1fbc1d427e8e7eaab7958deea18c522337"
+}
