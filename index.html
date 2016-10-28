@@ -11,54 +11,12 @@
 </head>
 <body>
 
-  <div id="debug-info" style="position:absolute;z-index:99;top:63px;background:white;line-height:2;padding:20px;max-width:100%;display:none">
-    Отладочная информация <button onclick="hideDebugger()">X</button>
-  </div>
   <div id="app"></div>
 
-  <script type="text/javascript">
-
-    // Глобальые переменные для окна дебагера
-    var debuger = document.getElementById('debug-info')
-    var initURL = window.location.href
-    var globalDebugTime = Date.now();
-
-
-    debuger.innerHTML += '<br/>' + '<a href="' + initURL + '">ПЕРЕЗАГРУЗКА ' + initURL + '</a>'
-
-    function addTodebuger(string) {
-        debuger.innerHTML += '<br/>' + (Date.now() - globalDebugTime) + 'мс: ' + string;
-    }
-
-    function hideDebugger() {
-      debuger.style.display = 'none'
-    }
-
-    window.onerror = function(msg, url, linenumber) {
-      addTodebuger('Error message: '+msg+'\nURL: '+url+'\nLine Number: '+linenumber)
-      debuger.style.display = ''
-      return true;
-    }
-
-    function debugFunction(e) {
-      if ((e.key.toUpperCase() === 'E' || e.key.toUpperCase() === 'У') && (e.ctrlKey || e.altKey) && e.shiftKey) {
-        var display = debuger.style.display
-        if (display === "none") debuger.style.display = ''
-        else debuger.style.display = 'none'
-      }
-    }
-    document.addEventListener("keypress", debugFunction);
-    addTodebuger('Начало Загрузки google maps');
-  </script>
-
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJcVTVX5v0tftCA5GDBGLsXRJrBwQEdgI"></script>
-  <script type="text/javascript">
-    addTodebuger('Начало Загрузки babel polyfill');
-  </script>
+
   <script src="/bundle/polyfill.js"></script>
-  <script type="text/javascript">
-    addTodebuger('Начало Загрузки /bundle/bundle.js');
-  </script>
+
   <script src="/bundle/bundle.js"></script>
 </body>
 </html>
