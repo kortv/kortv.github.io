@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <video id="myVideo" class="youtub" controls preload="auto" width="500" height="281" poster="video/01.jpg">
+        <source src="video/01.m4v" type="video/mp4" />
+        <source src="video/01.webm" type="video/webm" />
+        <source src="video/01.ogv" type="video/ogg" />
+        <source src="video/01.mp4" />
+    </video>
+    <script>
+        var vid = document.getElementById("myVideo");
+        vid.onended = function() {
+            alert("Видео закончено, ответьте на вопросы теста");
+            window.location.href = "test2.html"
+        }
+    </script>
+</body>
+
+</html>

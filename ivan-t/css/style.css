@@ -1,0 +1,22 @@
+h1{
+ float: none;  
+    margin-top: 10%;
+}
+
+h3 {
+     float: left;
+    margin: 10px;
+}
+
+form {
+    float: none;
+}
+
+.youtub{
+    height: 100%;
+width: 100%;
+}
+
+.but{
+margin-top: 1em;    
+}
