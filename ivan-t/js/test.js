@@ -30,23 +30,21 @@ function calc(matrica) {
     }
   }
   
-  alert(`Ваша оценка ${getRating(rezult)}, ${rezult * 10}% верно`);
+  alert(`Ваша оценка ${getRating(rezult)}, ${rezult * 10}% верно. Курс закончен!`);
 
-  var numPage = parseInt(document.title) + 1;
-  if (numPage > 2) {
-    alert("Курс закончен!");
-    const prev = sessionStorage.getItem('resault')
-    console.info(prev)
+  // var numPage = parseInt(document.title) + 1;
+  // if (numPage > 2) {
+    // alert("Курс закончен!");
+    // const prev = sessionStorage.getItem('resault')
+    // console.info(prev)
     download(
-      `${window.name}
-закончил курс с оценкой ${getRating(rezult)}.
-В среднем ответив верно на ${(+prev + rezult) * 10 / 2}% вопросов`,
+      `${window.name} закончил курс с оценкой ${getRating(rezult)}. В среднем ответив верно на ${rezult * 10}% вопросов.`,
       'resault.txt'
     )
-    sessionStorage.setItem('resault', 0)
-  } else {
-    console.info(this);
-    sessionStorage.setItem('resault', rezult)
-    window.location.href = "index" + numPage + ".html";
-  }
+    // sessionStorage.setItem('resault', 0)
+  // } else {
+  //   console.info(this);
+  //   sessionStorage.setItem('resault', rezult)
+  //   window.location.href = "index" + numPage + ".html";
+  // }
 }
